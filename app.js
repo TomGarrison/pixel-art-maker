@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var body = document.getElementsByTagName('body')[0]
     var bodyDivs = document.getElementsByTagName('div')[0]
     var div = document.createElement('div')
-    var container= document.getElementsByClassName('containerDiv')[0]
     div.className= "colorDiv"
+    var container= document.getElementsByClassName('containerDiv')[0]
     var remove= document.getElementsByClassName('colorDiv')
+
     // CREATING THE CHART START
     var num = 2520;
     for (var i = 0; i < num; i++) {
@@ -97,61 +98,63 @@ document.addEventListener("DOMContentLoaded", function() {
     //SINGLE DRAWING START
     divCircle.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
-          if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(187, 118, 249)"
+          if(event.target.classList.contains('colorDiv')){
+            event.target.style.backgroundColor = "rgb(187, 118, 249)"
+          }
         })
     })
     divCircle1.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "#f976f3"
+            event.target.style.backgroundColor = "#f976f3"
         })
     })
     divCircle2.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(249, 118, 118)"
+            event.target.style.backgroundColor = "rgb(249, 118, 118)"
         })
     })
     divCircle3.addEventListener('click', function() {
-        document.body.addEventListener('click', function() {          if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(118, 209, 249)"
+        document.body.addEventListener('click', function() {
+          if(event.target.classList.contains('colorDiv'))
+            event.target.style.backgroundColor = "rgb(118, 209, 249)"
         })
     })
     divCircle4.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(118, 249, 241)"
+            event.target.style.backgroundColor = "rgb(118, 249, 241)"
         })
     })
     divCircle5.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(118, 249, 206)"
+            event.target.style.backgroundColor = "rgb(118, 249, 206)"
         })
     })
     divCircle6.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(187, 249, 118)"
+            event.target.style.backgroundColor = "rgb(187, 249, 118)"
         })
     })
     divCircle7.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(230, 249, 118)"
+            event.target.style.backgroundColor = "rgb(230, 249, 118)"
         })
     })
     divCircle8.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(249, 216, 118)"
+            event.target.style.backgroundColor = "rgb(249, 216, 118)"
         })
     })
     divCircle9.addEventListener('click', function() {
         document.body.addEventListener('click', function() {
           if(event.target.classList.contains('colorDiv'))
-            var color = event.target.style.backgroundColor = "rgb(249, 130, 118)"
+            event.target.style.backgroundColor = "rgb(249, 130, 118)"
         })
     })
     // SINGLE PAINT END
@@ -228,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var remove= document.getElementsByClassName('colorDiv')
         for (var i = 0; i < remove.length; i++) {
           remove[i].style.backgroundColor= "rgba(255, 255, 255, 0)"
+
         }
         })
 
